@@ -22,18 +22,12 @@ from keras.models import load_model
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 
 
-#/content/drive/MyDrive/btyse_2025/data_arrays
+#testing file for either ct scans or x-rays, just change paths
 
-negative_scans = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/pneumonia_xray/data_arrays/negative_scans.npy")
-positive_scans = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/pneumonia_xray/data_arrays/positive_scans.npy")
-negative_labels = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/pneumonia_xray/data_arrays/negative_labels.npy")
-positive_labels = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/pneumonia_xray/data_arrays/positive_labels.npy")
-"""
-negative_scans = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/alzheimers_ct/data_arrays/negative_scans.npy")
-positive_scans = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/alzheimers_ct/data_arrays/positive_scans.npy")
-negative_labels = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/alzheimers_ct/data_arrays/negative_labels.npy")
-positive_labels = np.load("/Users/ronanhawkins/Desktop/coding/btyse25/alzheimers_ct/data_arrays/positive_labels.npy")
-"""
+negative_scans = np.load("filepath to negative scans numpy array")
+positive_scans = np.load("filepath to positive scans numpy array")
+negative_labels = np.load("filepath to negative labels")
+positive_labels = np.load("filepath to positive labels")
 print(negative_scans[66].shape)
 print("PS:",positive_scans.shape[0])
 print("PL:",positive_labels.shape[0])
@@ -46,11 +40,6 @@ random.seed(42)
 random_start = randint(0, positive_scans.shape[0]-1533)
 positive_scans = positive_scans[random_start:random_start+1533]
 positive_labels = positive_labels[random_start:random_start+1533]
-"""
-random_start = randint(0, negative_scans.shape[0]-300)
-negative_scans = negative_scans[random_start:random_start+300]
-negative_labels = negative_labels[random_start:random_start+300]
-"""
 print("PS",positive_scans.shape[0])
 print("PL",positive_labels.shape[0])
 print("NS",negative_scans.shape[0])
@@ -74,8 +63,7 @@ del(x)
 del(y)
 gc.collect()
 
-#model = load_model("chest_xray_classification.keras")
-model = load_model("/Users/ronanhawkins/Desktop/coding/btyse25/pneumonia_xray/saved_models/chest_xray_classification.keras")
+model = load_model("filepath to trained model")
 
 def ttest(x,y):
     tp = 0
