@@ -18,8 +18,8 @@ from skimage.filters import median, gaussian
 from skimage.morphology import disk
 
 """
-negative_dataset = "/Users/ronanhawkins/Datasets/ct_database/1_negative_ct"
-positive_dataset  = "/Users/ronanhawkins/Datasets/ct_database/0_positive_ct"
+negative_dataset = "filepath to folder with negative scans (nifti images)"
+positive_dataset  = "filepath to folder with positive scans (nifti images)"
 """
 
 ########################################
