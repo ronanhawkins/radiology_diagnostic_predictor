@@ -1,10 +1,12 @@
 # radiology_diagnostic_predictor
 
-This project is a fully versatile, multi-modal, multi-organ and multi-disease system to
-predict diagnosis of radiological scans using neural networks.
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+This project is a fully versatile, multi-modal, multi-organ and multi-disease system to predict diagnosis of radiological scans using neural networks.
 
 The project is written almost entirely in python using libraries such as numpy and tensorflow amongst others.  
-The programs in the project process scans of different data types and modalities, then trains either a 2D or 3D Convolutional Neural Network, tests the generated model and there is also a user interface to make predictions on new, unseen scans
+The programs in the project process scans of different data types and modalities, then trains either a 2D or 3D Convolutional Neural Network, tests the generated model and there is also a user interface to make predictions on new, unseen scans.
 
 I designed the system to work with any dataset of medical imaging, regardless of disease, area of body or type of scan.  
 There are systems for both 2 dimensional and 3-dimensional medical imaging.  
@@ -18,9 +20,6 @@ I received several awards for it including:
 - 3rd place Senior Technology at BTYSE 2025
 - Boston Scientific award at SciFest
 - Overall Winner & Best Research at BD Stem Stars
-
-Included in this repository are the python files for the programs, the research paper and the poster.  
-The best place to start is with the poster which provides a brief overview of the project.
 
 Python Files (filesystem tree with links):
 - [user_program.py](./user_program.py) -> user interace program to make predictions on unseen scans.
