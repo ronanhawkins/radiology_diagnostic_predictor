@@ -1,6 +1,8 @@
 # radiology_diagnostic_predictor
 
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[Poster Overview](./documentation/ronanhawkins_a0_poster.pdf) (Start Here)
+[Poster Overview](./documentation/btyse.pdf)
 
 This project is a fully versatile, multi-modal, multi-organ and multi-disease system to predict diagnosis of radiological scans using neural networks.
 
