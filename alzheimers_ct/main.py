@@ -23,10 +23,10 @@ from PIL import ImageFont
 
 
 #/content/drive/MyDrive/btyse_2025/data_arrays
-negative_scans = np.load("data_arrays/negative_scans.npy")
-positive_scans = np.load("data_arrays/positive_scans.npy")
-negative_labels = np.load("data_arrays/negative_labels.npy")
-positive_labels = np.load("data_arrays/positive_labels.npy")
+negative_scans = np.load("filepath to processed negative scans (numpy array)")
+positive_scans = np.load("filepath to processed positive scans (numpy array)")
+negative_labels = np.load("filepath to negative labels (numpy array)")
+positive_labels = np.load("filepath to positive labels (numpy array)")
 
 print(positive_scans.shape[0])
 print(positive_labels.shape[0])
