@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 
 type = input("Would you like to make a prediction on:\n (P) An X-ray for Pneumonia \n (A) A CT for Alzheimer's\nPlease enter a capital letter (P/A): ")
 if type == "P":
-    model = load_model("/Users/ronanhawkins/Desktop/coding/btyse25/pneumonia_xray/saved_models/n.keras")
+    model = load_model("path to trained keras model for pneumonia x-rays")
     #chest_xray_classificatio
     uinput = input("Please input filepath to image for prediction: ")
     visinp = input("Would you like to visualise the image? (Y/N): ")
@@ -17,7 +17,7 @@ if type == "P":
     image.show()
 
 elif type == "A":
-    model = load_model("/Users/ronanhawkins/Desktop/coding/btyse25/alzheimers_ct/saved_models/image_class_model.keras")
+    model = load_model("path to trained keras model for alzheimer's xrays")
     uinput = input("Please input filepath to image for prediction: ")
     visinp = input("Would you like to visualise the image? (Y/N): ")
     pred = str(model.predict(np.expand_dims(threed_process(uinput), axis=0))[0])
