@@ -26,9 +26,8 @@ def process(image):
     image = convert_to_numpy(image)
     return image_resize(image)
 
-"""
-negative_scans = "/Users/ronanhawkins/Desktop/chest_xray/normal/"
-positive_scans = "/Users/ronanhawkins/Desktop/chest_xray/pneumonia"
+negative_scans = "filepath to normal"
+positive_scans = "filepath to positive"
 positive_scans = [
     os.path.join(positive_scans, x)
     for x in os.listdir(positive_scans)
@@ -105,33 +104,6 @@ plt.title('Image Size Ratios')
 
 # function to show the plot
 plt.show()
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 """
 x_norm_ct = 0
