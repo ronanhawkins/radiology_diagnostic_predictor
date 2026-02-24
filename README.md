@@ -29,5 +29,5 @@ Python Files (filesystem tree with links):
   - [main.py](./alzheimers_ct/main.py) -> Program to train a 3D CNN on 3D Scans (i.e. MRIs)
   - [preprocessing.py](./alzheimers_ct/preprocessing.py) -> Program to process 3D scans (saves as numpy arrays)
 - [ /pneumonia_xray](./pneumonia_xray/)
-  - [train_cnn.py](./pneumonia_xray/train_cnn.py) -> Program to train a 2D CNN on 2D Scans (i.e. X-rays)
+  - [training_cnn.py](./pneumonia_xray/training_cnn.py) -> Program to train a 2D CNN on 2D Scans (i.e. X-rays)
   - [preprocessing.py](./pneumonia_xray/preprocessing.py) -> Program to process 2D scans (saves as numpy arrays)
